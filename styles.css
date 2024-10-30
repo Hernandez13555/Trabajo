@@ -181,7 +181,7 @@ header {
 }
 
 .we-text {
-  font-size: 25px;
+  font-size: 24px;
   margin: 10px;
   margin-right: 65px;
 }
@@ -207,9 +207,9 @@ header {
 }
 
 .we-image-section {
-  margin-right: 500px;
-  width: 900px;
-  height: 650px;
+  margin-right: 150px;
+  width: 1060px;
+  height: 700px;
 }
 /* we */
 
@@ -220,7 +220,7 @@ header {
   height: 800px;
   width: 1400px;
   margin: 100px;
-  margin-left: 350px;
+  margin-left: 250px;
   box-shadow: 20px 30px 20px rgb(182, 182, 182);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -274,3 +274,55 @@ header {
   margin-top: 50px;
 }
 /* Happy */
+
+/* ABOUT US */
+.ABOUT {
+  background-color: #000000;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+.About_us {
+  margin-bottom: 20px;
+}
+
+.About_content--title {
+  font-size: 40px;
+  margin-top: 50px;
+  color: #eaca1c;
+  margin: 10px 0;
+}
+
+.About_content--texto {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 10px auto;
+  color: #ffffff;
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+}
+
+.img_about {
+  height: 680px;
+  width: 1200px;
+  border: 5px solid #000000;
+}
+
+.About_content--boton {
+  font-size: 20px;
+  background-color: #eaca1c;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+/* ABOUT US */
