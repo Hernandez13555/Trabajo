@@ -1,3 +1,11 @@
+:root {
+  --background-color: #fff;
+  --highlight-color: #eaca1c;
+  --text-color: #000;
+  --text-color-light: #fff;
+  --font-family: 'Helvetica', Arial, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +13,8 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
 }
 
 .container {
@@ -19,7 +28,7 @@ body {
 header {
   grid-area: header;
   width: 100%;
-  background-color: #eaca1c;
+  background-color: var(--highlight-color);
   padding: 0 10px;
   top: 0;
   z-index: 100;
@@ -73,15 +82,14 @@ header {
   font-weight: 400;
   min-height: 75px;
   min-width: 85px;
-  text-decoration:none;
-  color: #000000;
+  text-decoration: none;
+  color: var(--text-color);
   position: relative;
 }
 
 .navigation__link:hover {
   color: #222;
 }
-
 
 .navigation__span {
   font-size: 1.0rem;
@@ -101,7 +109,7 @@ header {
 /* sidebar */
 .sidebar {
   margin-top: 20px 0;
-  background-color: #fff;
+  background-color: var(--background-color);
   height: 700px;
   margin: 100px;
   justify-content: center;
@@ -118,11 +126,11 @@ header {
   display: grid;
 }
 .card_content {
-  background-color: #fff;
+  background-color: var(--background-color);
   margin-right: 300px;
 }
 .card_content:nth-child(1) {
-  color: rgb(8, 8, 8);
+  color: var(--text-color);
 }
 .card_content--title {
   font-size: 60px;
@@ -147,7 +155,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 20px;
-  background-color: #eaca1c;
+  background-color: var(--highlight-color);
   width: 130px;
   height: 50px;
 }
@@ -155,7 +163,7 @@ header {
 
 /* we */
 .we-container {
-  background-color: #eaca1c;
+  background-color: var(--highlight-color);
   height: 950px;
   width: 100%;
   display: grid;
@@ -176,7 +184,7 @@ header {
 
 .we-content {
   grid-area: abajo-izquierda;
-  background-color: #eaca1c;
+  background-color: var(--highlight-color);
   margin-left: 150px;
 }
 
@@ -193,12 +201,11 @@ header {
   align-items: center;
   margin: 10px;
   margin-top: 40px;
-  background-color: #000000;
-  color: #fff;
+  background-color: var(--text-color);
+  color: var(--text-color-light);
   width: 180px;
   height: 50px;
 }
-
 
 .we-image-container {
   grid-area: abajo-derecha;
@@ -239,7 +246,7 @@ header {
 
 .Happiness_content--title {
   font-size: 80px;
-  color: #eaca1c;
+  color: var(--highlight-color);
   width: 600px;
 }
 .Happiness {
@@ -261,13 +268,13 @@ header {
   align-items: center;
   margin: 10px;
   margin-top: 40px;
-  background-color: #000000;
-  color: #fff;
+  background-color: var(--text-color);
+  color: var(--text-color-light);
   width: 180px;
   height: 50px;
 }
 
-.Graphic{
+.Graphic {
   width: 300px;
   height: 300px;
   margin-left: 300px;
@@ -277,8 +284,8 @@ header {
 
 /* ABOUT US */
 .ABOUT {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--text-color);
+  color: var(--text-color-light);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -295,7 +302,7 @@ header {
 .About_content--title {
   font-size: 40px;
   margin-top: 50px;
-  color: #eaca1c;
+  color: var(--highlight-color);
   margin: 10px 0;
 }
 
@@ -303,7 +310,7 @@ header {
   font-size: 16px;
   max-width: 600px;
   margin: 10px auto;
-  color: #ffffff;
+  color: var(--text-color-light);
 }
 
 .img_container {
@@ -314,13 +321,13 @@ header {
 .img_about {
   height: 680px;
   width: 1200px;
-  border: 5px solid #000000;
+  border: 5px solid var(--text-color);
 }
 
 .About_content--boton {
   font-size: 20px;
-  background-color: #eaca1c;
-  color: #000000;
+  background-color: var(--highlight-color);
+  color: var(--text-color);
   padding: 10px 20px;
   border: none;
   cursor: pointer;
