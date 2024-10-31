@@ -3,7 +3,7 @@
   --highlight-color: #eaca1c;
   --text-color: #000;
   --text-color-light: #fff;
-  --font-family: 'Helvetica', Arial, sans-serif;
+  --font-family: "Helvetica", Arial, sans-serif;
 }
 
 * {
@@ -92,7 +92,7 @@ header {
 }
 
 .navigation__span {
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 .navigation__link::after {
@@ -155,21 +155,76 @@ header {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  border: none;
   background-color: var(--highlight-color);
   width: 130px;
   height: 50px;
 }
 /* sidebar */
 
+/* centrado */
+.centrado__title {
+  width: 300px;
+  height: 150px;
+  font-size: 35px;
+  color: #eaca1c;
+}
+
+.centrado {
+  position: absolute;
+  /* display: flex; */
+  top: -180px;
+  left: 180px;
+  height: 400px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #e5e5e5;
+  justify-content: space-evenly;
+}
+
+.centrado__texto {
+  width: 300px;
+  height: 100px;
+  font-size: 15px;
+}
+
+.centrado__boton {
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  background-color: #e5e5e5;
+  color: var(--text-color);
+}
+
+.pruba {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  background-color: #eaca1c;
+  margin: 90px;
+  top: 50%;
+}
+.derecha {
+  padding: 30px;
+  background-color: #eaca1c;
+  margin-top: 200px;
+  width: 100%;
+  height: 15vh;
+  position: relative;
+}
+/* centrado */
+
 /* we */
 .we-container {
   background-color: var(--highlight-color);
-  height: 950px;
+  height: 1200px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "arriba arriba"
     "abajo-izquierda abajo-derecha";
 }
@@ -177,7 +232,7 @@ header {
 .we-title {
   grid-area: arriba;
   margin-left: 150px;
-  margin-top: 50px;
+  margin-top: 200px;
   font-size: 80px;
   width: 700px;
 }
@@ -201,6 +256,7 @@ header {
   align-items: center;
   margin: 10px;
   margin-top: 40px;
+  border: none;
   background-color: var(--text-color);
   color: var(--text-color-light);
   width: 180px;
@@ -209,14 +265,15 @@ header {
 
 .we-image-container {
   grid-area: abajo-derecha;
-  align-self: end; 
-  justify-self: end; 
+  align-self: end;
+  justify-self: end;
 }
 
 .we-image-section {
   margin-right: 150px;
   width: 1060px;
   height: 700px;
+  margin-bottom: 100px;
 }
 /* we */
 
@@ -268,6 +325,7 @@ header {
   align-items: center;
   margin: 10px;
   margin-top: 40px;
+  border: none;
   background-color: var(--text-color);
   color: var(--text-color-light);
   width: 180px;
@@ -333,3 +391,135 @@ header {
   cursor: pointer;
 }
 /* ABOUT US */
+
+/* OUR TEAM */
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.team__img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__card {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.team__content {
+  text-align: left;
+}
+
+.team__title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.team__text {
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  margin-right: 400px;
+}
+
+.team__button {
+  font-size: 20px;
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+/* OUR TEAM */
+
+/* TRY OUR */
+.promo {
+  display: flex;
+  align-items: center;
+  background-color: #e5e5e5;
+  padding: 50px;
+}
+
+.promo__card {
+  max-width: 50%;
+  padding-right: 50px;
+  margin-left: 100px;
+}
+
+.promo__content {
+  color: #000;
+}
+
+.promo__title {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.promo__text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.promo__button {
+  font-size: 20px;
+  background-color: #eaca1c;
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.promo__image img {
+  width: 800px;
+  height: 800px;
+  margin-right: 100px;
+}
+/* TRY OUR */
+
+/* CONTACT */
+.contact-section {
+  background-color: #eaca1c;
+  text-align: center;
+  padding: 30px;
+  color: #000;
+}
+
+.contact-title {
+  font-size: 60px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.contact-description {
+  font-size: 20px;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.contact-map {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.contact-map img {
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+.contact-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+/* CONTACT */
