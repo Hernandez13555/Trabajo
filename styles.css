@@ -1414,64 +1414,50 @@ header {
 
 /* Footer */
 
-/* Ajustes para dispositivos móviles */
+/* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
   /* Header */
   .header__container {
     flex-direction: column;
-    align-items: center;
-  }
-  .header__left {
-    flex: 0 1 100%;
-    justify-content: center;
-  }
-  .logo__img {
-    width: 50px;
+    padding: 10px;
   }
   .navigation {
     flex-direction: column;
     gap: 10px;
   }
-  .navigation__link {
-    min-height: 50px;
-    min-width: 65px;
-  }
 
   /* Sidebar */
   .sidebar {
     grid-template-columns: 1fr;
-    margin: 10px;
+    margin: 20px;
     height: auto;
   }
-  .card__image-img, .team__image-img, .img_happy, .Try__image img {
+  .card__image-img {
     width: 100%;
     height: auto;
   }
-
+  
   /* Content */
-  .centrado, .we-container, .HAPPY, .ABOUT, .team, .TRY {
+  .card_content--title, .centrado__title, .subcribete__title, .we-title, .contact-title {
+    font-size: 1.5rem;
+  }
+  .card_content--texto, .centrado__texto, .we-text, .Happiness_content--texto, .Try__text, .About_content--texto {
+    font-size: 1rem;
+  }
+  
+  /* Otros contenedores */
+  .centrado, .HAPPY, .ABOUT, .team, .TRY {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 10px;
   }
-  .we-title, .Happiness_content--title, .About_content--title, .team__title, .Try__title {
-    font-size: 2rem;
-    margin: 20px 0;
-  }
-  .centrado__title, .subcribete__title, .contact-title {
-    font-size: 1.5rem;
-  }
-  .team__text, .we-text, .Happiness_content--texto, .Try__text, .About_content--texto {
-    font-size: 1rem;
-  }
-
-  /* Formularios y botones */
-  .formulario-contenedor, .subcribete {
-    width: 90%;
-  }
-  .subcribete__buton, .contact-button, .we-button, .Happiness_content--boton, .Try__button {
-    width: 150px;
-    font-size: 1rem;
+  .we-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "arriba"
+      "abajo-izquierda"
+      "abajo-derecha";
   }
 
   /* Footer */
@@ -1487,4 +1473,3 @@ header {
     flex-direction: column;
     gap: 10px;
   }
-}
