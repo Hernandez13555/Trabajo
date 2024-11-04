@@ -1413,3 +1413,149 @@ header {
 }
 
 /* Footer */
+
+
+/* Estilos generales para móviles */
+@media (max-width: 768px) {
+  /* Ajuste del contenedor principal */
+  .container {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  /* Header */
+  .header__container {
+    flex-direction: column;
+  }
+  .header__left {
+    flex: 1;
+  }
+  .logo__img {
+    width: 50px;
+  }
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navigation__item {
+    width: auto;
+  }
+  .navigation__link {
+    min-width: auto;
+    min-height: auto;
+    font-size: 0.9rem;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 10px;
+  }
+  .img_izquierda, .card {
+    width: 100%;
+    text-align: center;
+  }
+  .card__image-img {
+    width: 100%;
+    height: auto;
+  }
+  .card_content--title {
+    font-size: 2rem;
+  }
+
+  /* Sección centrada */
+  .centrado {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .centrado__title {
+    font-size: 1.5rem;
+  }
+  .centrado__texto {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  /* We Section */
+  .we-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "arriba" 
+      "abajo-izquierda" 
+      "abajo-derecha";
+    padding: 10px;
+  }
+  .we-title {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  .we-image-section {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Happy Section */
+  .HAPPY {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  .img_happy {
+    width: 100%;
+    height: auto;
+  }
+  .Happiness_content--title {
+    font-size: 2rem;
+  }
+
+  /* Our Team */
+  .team {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .team__image, .team__card {
+    width: 100%;
+  }
+
+  /* TRY OUR Section */
+  .TRY {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .Try__card, .Try__image img {
+    width: 100%;
+  }
+  .Try__title {
+    font-size: 2rem;
+  }
+
+  /* Formulario - Subscribete */
+  .formulario-contenedor {
+    width: 100%;
+  }
+  .formulario-name, .formulario {
+    width: 100%;
+  }
+
+  /* Contact Section */
+  .contact-map img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  .footer {
+    height: auto;
+    padding: 20px;
+  }
+  .footer_informacion {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
