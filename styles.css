@@ -1413,3 +1413,78 @@ header {
 }
 
 /* Footer */
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Header */
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__left {
+    flex: 0 1 100%;
+    justify-content: center;
+  }
+  .logo__img {
+    width: 50px;
+  }
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navigation__link {
+    min-height: 50px;
+    min-width: 65px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    grid-template-columns: 1fr;
+    margin: 10px;
+    height: auto;
+  }
+  .card__image-img, .team__image-img, .img_happy, .Try__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Content */
+  .centrado, .we-container, .HAPPY, .ABOUT, .team, .TRY {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .we-title, .Happiness_content--title, .About_content--title, .team__title, .Try__title {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  .centrado__title, .subcribete__title, .contact-title {
+    font-size: 1.5rem;
+  }
+  .team__text, .we-text, .Happiness_content--texto, .Try__text, .About_content--texto {
+    font-size: 1rem;
+  }
+
+  /* Formularios y botones */
+  .formulario-contenedor, .subcribete {
+    width: 90%;
+  }
+  .subcribete__buton, .contact-button, .we-button, .Happiness_content--boton, .Try__button {
+    width: 150px;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+  }
+  .footer_img, .footer_informacion {
+    flex-direction: column;
+    align-items: center;
+  }
+  .redes {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
