@@ -724,98 +724,117 @@ width: 100%;
 
 
 
-/* Para pantallas grandes (desktop) */
-@media (min-width: 1200px) {
-  .container {
-    padding: 40px;
-  }
-  .header__left {
-    flex: 0 1 500px;
-  }
-  .centrado__title {
-    font-size: 60px;
-    width: 600px;
-  }
-  .we-title, .Happiness_content--title {
-    font-size: 100px;
-  }
-}
-
-/* Para pantallas medianas (tablets y laptops pequeñas) */
-@media (max-width: 1200px) {
-  .container {
-    padding: 20px;
-  }
-  .header__left {
-    flex: 0 1 300px;
-  }
-  .centrado__title, .we-title, .Happiness_content--title {
-    font-size: 50px;
-    width: 100%;
-  }
-  .HAPPY, .we-container, .ABOUT, .TRY {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-  .img_about, .team__image-img, .Try__image img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Para pantallas pequeñas (smartphones) */
-@media (max-width: 768px) {
-  .container {
+/* Ajustes para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 600px) {
+  .container, .centrado__posicion, .sidebar {
     flex-direction: column;
+    padding: 10px;
+    margin: 10px;
   }
+
   header {
-    position: relative;
+    padding: 0 5px;
+    font-size: 14px;
   }
+
   .navigation {
     flex-direction: column;
     gap: 10px;
   }
+
+  .navigation__link {
+    min-width: 70px;
+    min-height: 50px;
+  }
+
+  .card_content--title {
+    font-size: 36px;
+    text-align: center;
+    margin-left: 0;
+  }
+
   .centrado {
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
-  .centrado__title, .we-title, .Happiness_content--title {
-    font-size: 30px;
-    margin: 0;
+
+  .we-title {
+    font-size: 36px;
+    margin: 20px;
   }
-  .team__title, .Try__title, .About_content--title {
-    font-size: 30px;
+
+  .team__title {
+    font-size: 36px;
   }
-  .team__text, .we-text, .Happiness_content--texto, .Try__text, .About_content--texto, .contact-description {
-    font-size: 16px;
+
+  .TRY, .team {
+    flex-direction: column;
+    padding: 10px;
   }
-  .formulario, .subcribete__content {
-    width: 100%;
-  }
-  .img_about, .team__image-img, .Try__image img {
-    width: 100%;
-    height: auto;
+
+  .contact-title {
+    font-size: 32px;
   }
 }
 
-/* Para pantallas extra pequeñas */
-@media (max-width: 480px) {
-  .navigation__link {
-    min-height: 60px;
-    min-width: 70px;
+/* Ajustes para pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+    margin: auto;
   }
-  .navigation__span, .formulario__paraffo, .subcribete__text, .contact-description {
-    font-size: 14px;
+
+  .card_content--title, .we-title, .team__title, .TRY__title {
+    font-size: 48px;
   }
-  .contact-title, .subcribete__title, .we-title, .Happiness_content--title {
-    font-size: 24px;
-  }
-  .contact-description, .team__text {
-    font-size: 14px;
-  }
-  .HAPPY, .we-container, .ABOUT, .TRY {
+
+  .sidebar, .HAPPY {
     grid-template-columns: 1fr;
-    padding: 10px;
+  }
+
+  .centrado {
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+
+  .Happiness_content--title {
+    font-size: 40px;
+  }
+
+  .team__image-img {
+    width: 600px;
+    height: auto;
+  }
+
+  .we-title {
+    font-size: 48px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* Ajustes para pantallas grandes (escritorios y monitores grandes) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .card_content--title {
+    font-size: 60px;
+  }
+
+  .we-title, .team__title, .TRY__title {
+    font-size: 64px;
+  }
+
+  .contact-title {
+    font-size: 56px;
+  }
+
+  .we-container, .HAPPY, .team {
+    grid-template-columns: 1fr 1fr;
   }
 }
